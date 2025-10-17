@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeaWay Weather Portal</title>
+
+  <!-- Link your CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <div class="logo-icon">🌊</div>
+        <div class="logo-text">
+          <span class="logo-wave">S</span><span class="logo-wave">e</span><span class="logo-wave">a</span><span class="logo-wave">W</span><span class="logo-wave">a</span><span class="logo-wave">y</span>
+        </div>
+      </div>
+      <div class="ocean-waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+      <h1>Weather & Location Portal</h1>
+      <p>Real-time weather data and coordinates at your fingertips</p>
+    </div>
+
+    <div class="controls">
+      <div class="input-group">
+        <input type="text" id="locationInput" placeholder="Enter city or location (e.g., Lagos, New York)" value="Lagos">
+      </div>
+      <div class="button-group">
+        <button class="btn-weather" onclick="fetchWeather()">
+          <span>🌤️ Get Weather</span>
+        </button>
+        <button class="btn-map" onclick="fetchMap()">
+          <span>🗺️ Get Coordinates</span>
+        </button>
+        <button class="btn-both" onclick="fetchBoth()">
+          <span>⚡ Get Both</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="loadingDiv" style="display: none;" class="loading">
+      ⏳ Loading data...
+    </div>
+
+    <div id="resultsDiv" class="results"></div>
+  </div>
+
+  <!-- Link your JS -->
+  <script src="script.js"></script>
+</body>
+</html>
