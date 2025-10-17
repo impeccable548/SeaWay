@@ -4,10 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SeaWay Weather Portal</title>
-
-  <!-- Link your CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
     <div class="header">
@@ -30,26 +29,16 @@
         <input type="text" id="locationInput" placeholder="Enter city or location (e.g., Lagos, New York)" value="Lagos">
       </div>
       <div class="button-group">
-        <button class="btn-weather" onclick="fetchWeather()">
-          <span>🌤️ Get Weather</span>
-        </button>
-        <button class="btn-map" onclick="fetchMap()">
-          <span>🗺️ Get Coordinates</span>
-        </button>
-        <button class="btn-both" onclick="fetchBoth()">
-          <span>⚡ Get Both</span>
-        </button>
+        <button class="btn-weather" onclick="fetchWeather()">🌤️ Get Weather</button>
+        <button class="btn-map" onclick="fetchMap()">🗺️ Get Coordinates</button>
+        <button class="btn-both" onclick="fetchBoth()">⚡ Get Both</button>
       </div>
     </div>
 
-    <div id="loadingDiv" style="display: none;" class="loading">
-      ⏳ Loading data...
-    </div>
-
+    <div id="loadingDiv" class="loading" style="display:none;">⏳ Loading data...</div>
     <div id="resultsDiv" class="results"></div>
   </div>
 
-  <!-- Link your JS -->
   <script src="script.js"></script>
 </body>
 </html>
